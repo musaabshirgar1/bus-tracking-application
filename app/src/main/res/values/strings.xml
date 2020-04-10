@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">Bus Tracking System</string>
+
+    <string-array name="BusNames">
+        <item>Star Bazaar/ Umiya Vijay</item>
+        <item>Bopal</item>
+        <item>Gandhinagar</item>
+    </string-array>
+
+    <string-array name="StudentBranch">
+        <item>Information Technology</item>
+        <item>Mechanical Eng.</item>
+        <item>Electronics and Communication Eng.</item>
+        <item>Civil Eng.</item>
+        <item>Chemical Eng.</item>
+        <item>Electrical Eng.</item>
+    </string-array>
+    <string name="title_activity_driver_maps">Map</string>
+    <string name="title_activity_student_maps">Map</string>
+
+    <string-array name="loginPage">
+        <item>Nirma bus tracking system</item>
+        <item>Please login to continue</item>
+        <item>Please make sure you are connected to wifi/mobile data</item>
+    </string-array>
+
+</resources>

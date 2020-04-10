@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#050505"
+    tools:context=".DriverRegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00F8A63F"
+        android:text="Enter Driver Details"
+        android:textColor="#F8A63F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/driverRegistrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_animation"
+        android:onClick="registerAsDriver"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="230dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.015"
+        app:srcCompat="@drawable/buslogo" />
+
+    <TextView
+        android:id="@+id/driverSigninTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="Already Registered?\nSign in here."
+        android:textColor="#FBFBFB"
+        android:textSize="14.5sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/driverRegistrationButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <EditText
+        android:id="@+id/driverNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Your Full Name.."
+        android:background="@drawable/registartion_edittext"
+        android:drawableLeft="@drawable/custom_enter_name_edit_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Select the Bus \nYou Drive"
+        android:textAlignment="center"
+        android:textColor="#F8A63F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toStartOf="@+id/driverBusNameSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Spinner
+        android:id="@+id/driverBusNameSpinner"
+        android:layout_width="209dp"
+        android:layout_height="30dp"
+        android:background="@drawable/registartion_edittext"
+        android:entries="@array/BusNames"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <EditText
+        android:id="@+id/driverPhoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/registartion_edittext"
+        android:drawableLeft="@drawable/custom_phone_edit_text"
+        android:hint="Enter Your Phone Number.."
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.319"
+        android:drawableStart="@drawable/custom_phone_edit_text" />
+
+    <EditText
+        android:id="@+id/driverEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/registartion_edittext"
+        android:drawableStart="@drawable/custom_email_edit_text"
+        android:drawableLeft="@drawable/custom_email_edit_text"
+        android:ems="10"
+        android:hint="Enter Your Email Address.."
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <EditText
+        android:id="@+id/driverPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/registartion_edittext"
+        android:drawableLeft="@drawable/custom_password_edit_text"
+        android:hint="Enter Your Password.."
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/driverRegistrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.739"
+        android:drawableStart="@drawable/custom_password_edit_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
